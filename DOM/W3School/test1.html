@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Following W3School</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <h1>JavaScript1</h1>
+    <h2>JavaScript2</h2>
+    <h2>JavaScript3</h2>
+
+    <p class="para1">This is a paragraph which is used to test classname1</p>
+    <p class="para1">This is a paragraph which is used to test classname2</p>
+    <p class="para1">This is a paragraph which is used to test classname3</p>
+    <p class="para1">This is a paragraph which is used to test classname4</p>
+</body>
+<script>
+    // The innerHTML property is useful for getting or replacing the content of HTML elements.
+    document.getElementById("demo").innerHTML = "Hello Dushyant"
+    demo.style.color = 'green'
+    const myH2 = document.querySelectorAll("h2")
+    // myH2[0].style.color='green'
+    // myH2[1].style.color='blue'
+    myH2.forEach((li) => li.style.color='red')
+
+
+    // using classname
+    const paraList = document.getElementsByClassName('para1')
+    arr = Array.from(paraList)
+    arr.forEach((item) => item.style.color = 'yellow')
+
+</script>
+</html>

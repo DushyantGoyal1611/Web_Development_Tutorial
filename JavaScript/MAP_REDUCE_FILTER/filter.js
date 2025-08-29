@@ -125,25 +125,46 @@ Filter means "Pick only what you want"
 // console.log(JSON.stringify(result, null, 2));  // to null,2 is used to beautify it and JSON to parse object
 
 // Q11. Filter orders that contain at least one "apple" AND the total quantity of all items is greater than 5.
-const orders = [
-  { id: 1, customer: "Alice", items: [ { name: "apple", qty: 2 }, { name: "banana", qty: 3 } ] },
-  { id: 2, customer: "Bob", items: [ { name: "orange", qty: 1 }, { name: "apple", qty: 1 } ] },
-  { id: 3, customer: "Charlie", items: [ { name: "apple", qty: 5 }, { name: "orange", qty: 2 } ] },
-  { id: 4, customer: "David", items: [ { name: "banana", qty: 10 } ] }
-];
+// const orders = [
+//   { id: 1, customer: "Alice", items: [ { name: "apple", qty: 2 }, { name: "banana", qty: 3 } ] },
+//   { id: 2, customer: "Bob", items: [ { name: "orange", qty: 1 }, { name: "apple", qty: 1 } ] },
+//   { id: 3, customer: "Charlie", items: [ { name: "apple", qty: 5 }, { name: "orange", qty: 2 } ] },
+//   { id: 4, customer: "David", items: [ { name: "banana", qty: 10 } ] }
+// ];
 
-const result = orders.filter((order) => {
-    let quantity = 0
-    let hasApple = false
-    for(let item of order.items){
-        quantity += item['qty']
-        if(item['name'] == 'apple'){
-            hasApple = true
-        }
-    }
-    return hasApple && quantity>5
-})
-console.log(JSON.stringify(result,null,2));
+// const result = orders.filter((order) => {
+//     let quantity = 0
+//     let hasApple = false
+//     for(let item of order.items){
+//         quantity += item['qty']
+//         if(item['name'] == 'apple'){
+//             hasApple = true
+//         }
+//     }
+//     return hasApple && quantity>5
+// })
+// console.log(JSON.stringify(result,null,2));
 
 
+// Q12. Filter products that are in the "electronics" category AND cost more than 500.
+// const products = [
+//   { name: "Laptop", price: 1200, categories: ["electronics", "computers"] },
+//   { name: "Shirt", price: 50, categories: ["clothing"] },
+//   { name: "Smartphone", price: 800, categories: ["electronics", "mobile"] },
+//   { name: "Pants", price: 60, categories: ["clothing"] },
+//   { name: "Headphones", price: 150, categories: ["electronics", "audio"] }
+// ];
+
+// const result = products.filter((product) => {
+//     let hasElectronics = false
+//     for(let item of product['categories']){
+//         if(item == 'electronics'){
+//             hasElectronics = true
+//         }
+//     }
+
+//     return hasElectronics && product['price']>500
+// })
+
+// console.log(result);
 
