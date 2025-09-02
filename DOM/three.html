@@ -1,3 +1,7 @@
+<!-- In this file we learn how to create, edit and remove elements using Javascript  -->
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,6 +10,47 @@
     <title>Chai aur Code</title>
 </head>
 <body style="background-color: #212121; color: #FFF;">
-    
+    <ul class="language">
+        <li>JavaScript</li>
+    </ul>
 </body>
+<script>
+    // Basic Way (Slow bcz innerHTML traverse all nodes of tree)
+    // function addLanguage(langName){
+    //     const li = document.createElement('li')
+    //     li.innerHTML = `${langName}`
+    //     document.querySelector('.language').append(li)
+    // }
+
+    // addLanguage("Python")
+    // addLanguage("CPP")
+
+    // Q1. How to create Element?
+    // Optimal Way
+    function optimalAddLanguage(langName){
+        const li = document.createElement('li')
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector('.language').appendChild(li)
+    }
+
+    optimalAddLanguage("Java")
+    optimalAddLanguage("Kotlin")
+
+    // Q2. How to Edit Element?
+    const secondLang = document.querySelector("li:nth-child(2)")
+    const newli = document.createElement('li')
+    newli.textContent = "Mojo"
+    secondLang.replaceWith(newli)
+
+    // Again Edit
+    const firstLang = document.querySelector("li:first-child")
+    const typeli = document.createElement('li')
+    typeli.textContent = "Typescript"
+    firstLang.replaceWith(typeli)
+
+    // Q2. How to Remove Element?
+    const lastLang = document.querySelector("li:last-child")
+    lastLang.remove()
+
+</script>
 </html>
