@@ -1,0 +1,48 @@
+Mouse Events:
+These events are related to mouse interactions.
+- click: Fired when an element is clicked.
+- dblclick: Fired when an element is double-clicked.
+- mousedown: Fired when a mouse button is pressed down over an element.
+- mouseup: Fired when a mouse button is released over an element.
+- mousemove: Fired when the mouse pointer moves while over an element.
+- mouseover: Fired when the mouse pointer enters an element.
+- mouseout: Fired when the mouse pointer leaves an element.
+
+
+Keyboard Events:
+These events are related to keyboard interactions.
+- keydown: Fired when a key is pressed down.
+- keypress: Fired when a character key is pressed (not all keys trigger this).
+- keyup: Fired when a key is released.
+
+
+Form Events:
+These events are related to form elements and their interactions.
+- submit: Fired when a form is submitted.
+- change: Fired when the value of an input element, select box, or textarea changes.
+- focus: Fired when an element gains focus.
+- blur: Fired when an element loses focus.
+- input: Fired when the value of an input or textarea element changes due to user input.
+
+
+Load and Unload Events:
+These events are related to the loading and unloading of resources.
+- load: Fired when a page or a specific element (like an image) has finished loading.
+- unload: Fired when a page is being unloaded (e.g., when the user navigates away).
+- DOMContentLoaded: Fired when the initial HTML document has been completely loaded and parsed, without waiting for stylesheets, images, and subframes to finish loading.
+
+
+Window Events:
+These events relate to the browser window itself.
+- resize: Fired when the browser window is resized.
+- scroll: Fired when the user scrolls the document.
+
+
+Drag and Drop Events:
+These events are related to dragging and dropping elements.
+- dragstart, drag, dragenter, dragleave, dragover, drop, dragend.
+
+
+Touch Events:
+These events are related to touch interactions on touch-enabled devices.
+- touchstart, touchmove, touchend, touchcancel.
